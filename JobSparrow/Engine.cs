@@ -25,7 +25,7 @@
 				catch (Exception)
 				{
 					Console.WriteLine("Problem in SiteSearch JobsBg");
-					SoundPlayer player = new SoundPlayer(@"D:\JobSparrow\JobSparrow\bin\Debug\net6.0\Sounds\ProblemJobsBgSound.wav");
+					SoundPlayer player = new SoundPlayer(@"D:\JobSparrow\JobSparrow\Sounds\ProblemJobsBgSound.wav");
 					player.Play();
 				}
 
@@ -36,7 +36,7 @@
 				catch (Exception)
 				{
 					Console.WriteLine("Problem in SiteSearch DevBg");
-					SoundPlayer player = new SoundPlayer(@"D:\JobSparrow\JobSparrow\bin\Debug\net6.0\Sounds\ProblemDevBgSound.wav");
+					SoundPlayer player = new SoundPlayer(@"D:\JobSparrow\JobSparrow\Sounds\ProblemDevBgSound.wav");
 					player.Play();
 				}
 
@@ -46,12 +46,12 @@
 
 				if (jobsBgResult.Length > 65)
 				{
-					SoundPlayer player = new SoundPlayer(@"D:\JobSparrow\JobSparrow\bin\Debug\net6.0\Sounds\JobsBgSound.wav");
+					SoundPlayer player = new SoundPlayer(@"D:\JobSparrow\JobSparrow\Sounds\JobsBgSound.wav");
 					player.Play();
 				}
 				else if( devBgResult.Length > 65)
 				{
-					SoundPlayer player = new SoundPlayer(@"D:\JobSparrow\JobSparrow\bin\Debug\net6.0\Sounds\DevBgSound.wav");
+					SoundPlayer player = new SoundPlayer(@"D:\JobSparrow\JobSparrow\Sounds\DevBgSound.wav");
 					player.Play();
 				}
 

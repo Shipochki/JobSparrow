@@ -16,7 +16,7 @@
 			int currentCountJobs = 0;
 			int currentMilestone = 0;
 
-			using (StreamReader sr = new StreamReader("JobsBg.txt"))
+			using (StreamReader sr = new StreamReader(@"D:\JobSparrow\JobSparrow\TextsFolder\JobsBg.txt"))
 			{
 				while ((lastCountJobsString = sr.ReadLine()) != null)
 				{
@@ -51,7 +51,7 @@
 
 			if (lastCountJobs != currentCountJobs)
 			{
-				using (StreamWriter sw = new StreamWriter("JobsBg.txt"))
+				using (StreamWriter sw = new StreamWriter(@"D:\JobSparrow\JobSparrow\TextsFolder\JobsBg.txt"))
 				{
 					sw.WriteLine(currentCountJobs);
 				}

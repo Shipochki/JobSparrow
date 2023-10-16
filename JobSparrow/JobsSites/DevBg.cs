@@ -14,7 +14,7 @@
 			int lastCountJobs = 0;
 			int currentCountJobs = 0;
 
-			using (StreamReader sr = new StreamReader("DevBg.txt"))
+			using (StreamReader sr = new StreamReader(@"D:\JobSparrow\JobSparrow\TextsFolder\DevBg.txt"))
 			{
 				while ((lastCountJobsString = sr.ReadLine()) != null)
 				{
@@ -39,7 +39,7 @@
 
 			if (lastCountJobs != currentCountJobs)
 			{
-				using (StreamWriter sw = new StreamWriter("DevBg.txt"))
+				using (StreamWriter sw = new StreamWriter(@"D:\JobSparrow\JobSparrow\TextsFolder\DevBg.txt"))
 				{
 					sw.WriteLine(currentCountJobs);
 				}
